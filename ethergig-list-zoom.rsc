@@ -2,8 +2,8 @@
 # Obtained from zoom official site
 
 /ip firewall address-list
-add list=nice address="1.2.3.4"
-rem [find list="ethergig-zoom" dynamic=no]
+add list=ethergig-zoom address="1.2.3.4"
+rem [find list="ethergig-zoom"]
 add list=ethergig-zoom address=3.7.35.0/25
 add list=ethergig-zoom address=3.21.137.128/25
 add list=ethergig-zoom address=3.22.11.0/24
