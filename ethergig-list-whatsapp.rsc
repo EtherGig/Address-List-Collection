@@ -234,6 +234,3 @@ add list=ethergig-whatsapp address=185.60.217.54/32
 add list=ethergig-whatsapp address=185.60.218.53/32
 add list=ethergig-whatsapp address=185.60.218.54/32
 add list=ethergig-whatsapp address=185.60.219.60/31
-add list=ethergig-whatsapp address=docker.whatsapp.biz
-add list=ethergig-whatsapp address=dl.bintray.com
-add list=ethergig-whatsapp address=akamai.bintray.com
