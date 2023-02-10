@@ -4,6 +4,7 @@
 /ip firewall address-list
 add list=ethergig-whatsapp address="1.2.3.4"
 rem [find list="ethergig-whatsapp"]
+:delay 5s
 add list=ethergig-whatsapp address=3.33.221.48/32
 add list=ethergig-whatsapp address=3.33.252.61/32
 add list=ethergig-whatsapp address=15.197.206.217/32
