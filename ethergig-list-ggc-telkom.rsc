@@ -2,8 +2,8 @@
 # Obtained from buananetpbun.github.io site
 
 /ip firewall address-list
-add list=nice address="1.2.3.4"
-rem [find list="ethergig-ggc-telkom" dynamic=no]
+add list=ethergig-ggc-telkom address="1.2.3.4"
+rem [find list="ethergig-ggc-telkom"]
 add address=36.64.0.0/16 list=ethergig-ggc-telkom
 add address=36.65.0.0/16 list=ethergig-ggc-telkom
 add address=36.66.0.0/16 list=ethergig-ggc-telkom
