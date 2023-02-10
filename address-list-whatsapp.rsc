@@ -3,7 +3,7 @@
 
 /ip firewall address-list
 add list=nice address="1.2.3.4"
-rem [find list="ethergig-whatsapp"]
+rem [find list="ethergig-whatsapp" dynamic=no]
 add list=ethergig-whatsapp address=3.33.221.48/32
 add list=ethergig-whatsapp address=3.33.252.61/32
 add list=ethergig-whatsapp address=15.197.206.217/32
@@ -233,6 +233,6 @@ add list=ethergig-whatsapp address=185.60.217.54/32
 add list=ethergig-whatsapp address=185.60.218.53/32
 add list=ethergig-whatsapp address=185.60.218.54/32
 add list=ethergig-whatsapp address=185.60.219.60/31
-add list=ethergig-whatsapp address=docker.ethergig-whatsapp.biz
+add list=ethergig-whatsapp address=docker.whatsapp.biz
 add list=ethergig-whatsapp address=dl.bintray.com
 add list=ethergig-whatsapp address=akamai.bintray.com
