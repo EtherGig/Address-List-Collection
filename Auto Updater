@@ -1,0 +1,19 @@
+#Add this to your script then create a scheduler calling to this script
+#Change this array value according to which list you want to update
+
+:local autoupdate {"whatsapp";"tiktok";"zoom";"ggc-telkom"}
+:if ([:len [/file find name~"ethergig-list"]] > 0) do={
+    :log info "OLD ETHERGIG LIST DETECTED"
+    :log info "DELETING"
+    /file remove [find name~"ethergig-list"]
+    }
+:log info "DOWNLOADING LATEST ETHERGIG-LIST"
+:foreach i in=$autoupdate do={
+    #:log info message=("DOWNLOADING ethergig-list-" . $i . ".rsc")
+    /tool fetch url=("https://raw.githubusercontent.com/EtherGig/Address-List-Collection/main/ethergig-list-" .  $i . ".rsc") mode=https
+    /ip firewall raw set [find where action=add-dst-to-address-list address-list=("ethergig-" . $i) disabled=yes]
+    /import file=("ethergig-list-" . $i . ".rsc")
+    /ip firewall raw set [find where action=add-dst-to-address-list address-list=("ethergig-" . $i) disabled=no]
+    #:log info message=("IMPORTED ethergig-list-" . $i . ".rsc")
+}
+:log info "ETHERGIG-LIST UPDATED"
