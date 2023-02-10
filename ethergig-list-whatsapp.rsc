@@ -2,7 +2,7 @@
 # Obtained from Meta for Developer site
 
 /ip firewall address-list
-add list=nice address="1.2.3.4"
+add list=ethergig-whatsapp address="1.2.3.4"
 rem [find list="ethergig-whatsapp" dynamic=no]
 add list=ethergig-whatsapp address=3.33.221.48/32
 add list=ethergig-whatsapp address=3.33.252.61/32
